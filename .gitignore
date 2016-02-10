@@ -298,3 +298,17 @@ curl-7.47.1/tests/server/.deps/
 curl-7.47.1/tests/server/Makefile
 curl-7.47.1/tests/unit/.deps/
 curl-7.47.1/tests/unit/Makefile
+
+jpeg-9b/.deps/
+jpeg-9b/.libs/
+jpeg-9b/Makefile
+jpeg-9b/cjpeg
+jpeg-9b/config.log
+jpeg-9b/config.status
+jpeg-9b/djpeg
+jpeg-9b/jconfig.h
+jpeg-9b/jpegtran
+jpeg-9b/libtool
+jpeg-9b/rdjpgcom
+jpeg-9b/stamp-h1
+jpeg-9b/wrjpgcom
