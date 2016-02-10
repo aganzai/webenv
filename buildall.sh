@@ -17,4 +17,15 @@ make
 make install
 popd
 
+#build zlib
+pushd zlib-1.2.8
+./configure --prefix=$PWD/../mybuild
+make
+make install
+popd
+
+#build php
+pushd php-5.4.45 
+./configure --prefix=$PWD/../mybuild --enable-fpm  --with-mcrypt=/usr/local/libmcrypt --with-zlib --with-zlib-dir=$PWD/../mybuild --enable-mbstring --with-openssl-dir=$PWD/../mybuild --with-mysql --with-mysqli --with-mysql-sock --with-gd --with-jpeg-dir=/usr/lib --enable-gd-native-ttf  --enable-pdo --with-pdo-mysql --with-gettext --with-curl --with-pdo-mysql --enable-sockets --enable-bcmath --enable-xml --with-bz2 --enable-zip --enable-freetype
+popd
 

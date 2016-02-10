@@ -5,7 +5,7 @@
 *.la
 *.mk
 *.slo
-build/
+mybuild/
 
 openssl-1.0.1r/crypto/*/lib
 openssl-1.0.1r/test/*
@@ -218,3 +218,25 @@ httpd-2.4.18/support/htpasswd
 httpd-2.4.18/support/httxt2dbm
 httpd-2.4.18/support/logresolve
 httpd-2.4.18/support/rotatelogs
+
+zlib-1.2.8/Makefile
+zlib-1.2.8/zconf.h
+zlib-1.2.8/configure.log
+zlib-1.2.8/example
+zlib-1.2.8/example64
+zlib-1.2.8/examplesh
+zlib-1.2.8/libz.so
+zlib-1.2.8/libz.so.1
+zlib-1.2.8/libz.so.1.2.8
+zlib-1.2.8/minigzip
+zlib-1.2.8/minigzip64
+zlib-1.2.8/minigzipsh
+
+bzip2-1.0.6/bzip2
+bzip2-1.0.6/bzip2recover
+bzip2-1.0.6/sample1.rb2
+bzip2-1.0.6/sample1.tst
+bzip2-1.0.6/sample2.rb2
+bzip2-1.0.6/sample2.tst
+bzip2-1.0.6/sample3.rb2
+bzip2-1.0.6/sample3.tst
