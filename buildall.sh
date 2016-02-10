@@ -24,8 +24,24 @@ make
 make install
 popd
 
+#build bzip2
+pushd bzip2-1.0.6
+make
+make install PREFIX=$PWD/../mybuild
+popd
+
+#build curl
+pushd curl-7.47.1
+#./configure --prefix=$PWD/../mybuild --enable-shared=no --with-ssl=$PWD/../mybuild
+./configure --prefix=$PWD/../mybuild --enable-shared=no
+make
+make install
+popd
+
 #build php
-pushd php-5.4.45 
-./configure --prefix=$PWD/../mybuild --enable-fpm  --with-mcrypt=/usr/local/libmcrypt --with-zlib --with-zlib-dir=$PWD/../mybuild --enable-mbstring --with-openssl-dir=$PWD/../mybuild --with-mysql --with-mysqli --with-mysql-sock --with-gd --with-jpeg-dir=/usr/lib --enable-gd-native-ttf  --enable-pdo --with-pdo-mysql --with-gettext --with-curl --with-pdo-mysql --enable-sockets --enable-bcmath --enable-xml --with-bz2 --enable-zip --enable-freetype
+pushd php-5.4.45
+./configure --prefix=$PWD/../mybuild --enable-fpm  --with-mcrypt=/usr/local/libmcrypt --with-zlib --with-zlib-dir=$PWD/../mybuild --with-bz2=$PWD/../mybuild --enable-mbstring --with-openssl-dir=$PWD/../mybuild --with-mysql --with-mysqli --with-mysql-sock --with-gd --with-jpeg-dir=/usr/lib --enable-gd-native-ttf  --enable-pdo --with-pdo-mysql --with-gettext --with-curl --with-pdo-mysql --enable-sockets --enable-bcmath --enable-xml --enable-zip --enable-freetype
+make
+make install
 popd
 
