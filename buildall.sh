@@ -40,7 +40,7 @@ popd
 
 #build php
 pushd php-5.4.45
-./configure --prefix=$PWD/../mybuild --enable-fpm  --with-mcrypt=/usr/local/libmcrypt --with-zlib --with-zlib-dir=$PWD/../mybuild --with-bz2=$PWD/../mybuild --enable-mbstring --with-openssl-dir=$PWD/../mybuild --with-mysql --with-mysqli --with-mysql-sock --with-gd --with-jpeg-dir=/usr/lib --enable-gd-native-ttf  --enable-pdo --with-pdo-mysql --with-gettext --with-curl --with-pdo-mysql --enable-sockets --enable-bcmath --enable-xml --enable-zip --enable-freetype
+./configure --prefix=$PWD/../mybuild --enable-fpm  --with-mcrypt=/usr/local/libmcrypt --with-zlib --with-zlib-dir=$PWD/../mybuild --with-bz2=$PWD/../mybuild --enable-mbstring --with-openssl-dir=$PWD/../mybuild --with-mysql --with-mysqli --with-mysql-sock --with-gd --with-jpeg-dir=/usr/lib --enable-gd-native-ttf  --enable-pdo --with-pdo-mysql --with-gettext --with-curl=$PWD/../mybuild --with-pdo-mysql --enable-sockets --enable-bcmath --enable-xml --enable-zip --enable-freetype
 make
 make install
 popd
